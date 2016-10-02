@@ -1,0 +1,10 @@
+prefix=/home/freetype2/install-mic
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/freetype2
+
+Name: freetype2
+Description: libfreetype
+Version: 2.6.3
+Libs: -L${libdir} -lfreetype
+Cflags: -I${includedir}

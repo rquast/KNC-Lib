@@ -1,0 +1,6 @@
+config.mk
+objs/vc2010/
+build-mic/
+build/
+install-mic/
+install-x64/
