@@ -26,8 +26,8 @@ MPSSDIR=$SYSROOT
 # Build k1om #
 cd $BUILDTREE \
 && CC=icc CXX=icpc \
-CXXFLAGS="-g -O2 -fPIC -mmic" \
-CFLAGS="-g -O2 -fPIC -mmic" \
+CXXFLAGS="-g -O3 -fPIC -mmic" \
+CFLAGS="-g -O3 -fPIC -mmic" \
 cmake3 \
 -DCMAKE_SYSTEM_NAME=Linux \
 -DCMAKE_SYSTEM_PROCESSOR=k1om \
@@ -35,10 +35,10 @@ cmake3 \
 -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER \
 -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY \
 -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY \
--DCMAKE_INSTALL_PREFIX=$SRC/install-mic \
+-DCMAKE_INSTALL_PREFIX=$SRC/../install-mic/libpng \
 -DBUILD_SHARED_LIBS=ON \
 $SRC/
-cd $BUILDTREE && make install VERBOSE=1
+cd $BUILDTREE && make -j12 install VERBOSE=1
 
 exit
 cd $BUILDTREE && $SRC/configure \

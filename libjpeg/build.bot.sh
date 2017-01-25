@@ -26,13 +26,15 @@ MPSSDIR=$SYSROOT
 # Build k1om #
 cd $BUILDTREE \
 && $SRC/configure CC=icc CXX=icpc \
-CXXFLAGS="-g -O2 -fPIC -mmic" \
-CFLAGS="-g -O2 -fPIC -mmic" \
+CXXFLAGS="-g -O3 -fPIC -mmic" \
+CFLAGS="-g -O3 -fPIC -mmic" \
 LDFLAGS="-mmic" \
 --host=x86_64 \
 --prefix $BUILDTREE
 cd $BUILDTREE && \
 make -j12
+
+#TODO install-mic
 
 exit
 #TODO
