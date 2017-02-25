@@ -184,18 +184,18 @@ crond status</p>
 <h1>Install MPSS</h1>
 
 <p>cp
-/mnt/nfs/System/mpss-3.7-linux.tar /home/</p>
+/mnt/nfs/System/mpss-3.8.1-linux.tar /home/</p>
 
 <p>cd /home/          </p>
 
-<p>tar xvf mpss-3.7-linux.tar</p>
+<p>tar xvf mpss-3.8.1-linux.tar</p>
 
-<p>cd mpss-3.7               </p>
+<p>cd mpss-3.8.1               </p>
 
 <p>#recompile
 the MPSS host kernel modules</p>
 
-<p>cd /home/mpss-3.7/src/</p>
+<p>cd /home/mpss-3.8.1/src/</p>
 
 <p>rpmbuild
 --rebuild mpss-modules-*.rpm</p>
@@ -204,12 +204,12 @@ the MPSS host kernel modules</p>
 re-built mpss-modules and mpss-modules-dev RPM</p>
 
 <p>cp
-/root/rpmbuild/RPMS/x86_64/mpss-modules-* /home/mpss-3.7/modules/</p>
+/root/rpmbuild/RPMS/x86_64/mpss-modules-* /home/mpss-3.8.1/modules/</p>
 
 <p>#check for
 installed mpss                                                                                                      </p>
 
-<p>cd /home/mpss-3.7/         </p>
+<p>cd /home/mpss-3.8.1/         </p>
 
 <p>rpm -qa |
 grep -e intel-mic -e mpss</p>
@@ -489,13 +489,13 @@ rh-python34 bash</p>
 <h1>Copy/unpack the k1om bins tar-ball</h1>
 
 <p>cp
-/mnt/nfs/System/mpss-3.7-k1om.tar /home/</p>
+/mnt/nfs/System/mpss-3.8.1-k1om.tar /home/</p>
 
 <p>cd /home/</p>
 
-<p>tar xvf mpss-3.7-k1om.tar</p>
+<p>tar xvf mpss-3.8.1-k1om.tar</p>
 
-<p>cd /home/mpss-3.7/k1om/</p>
+<p>cd /home/mpss-3.8.1/k1om/</p>
 
 <p>for rpm in *.rpm;
 do rpm2cpio $rpm | cpio -idm; done</p>
@@ -513,7 +513,7 @@ do rpm2cpio $rpm | cpio -idm; done</p>
 src is hardcoded to look for k1om libs</p>
 
 <p># in
-k1om_rpm=/home/mpss-3.7/k1om/</p>
+k1om_rpm=/home/mpss-3.8.1/k1om/</p>
 
 <p>cd
 /home/Python/</p>
