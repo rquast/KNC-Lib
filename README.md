@@ -339,16 +339,16 @@ mount | grep home </p>
 <p>ssh mic7
 mount | grep home </p>
 
-<h1>Install ICC16 </h1>
+<h1>Install ICC17 </h1>
 
 <p>cp
-/mnt/nfs/System/parallel_studio_xe_2016_update3.tgz /home/</p>
+/mnt/nfs/System/parallel_studio_xe_2017_update1.tgz /home/</p>
 
 <p>cd /home/</p>
 
-<p>tar xvf parallel_studio_xe_2016_update3.tgz</p>
+<p>tar xvf parallel_studio_xe_2017_update1.tgz</p>
 
-<p>cd parallel_studio_xe_2016_update3</p>
+<p>cd parallel_studio_xe_2017_update1</p>
 
 <p>sh
 ./install_GUI.sh</p>
