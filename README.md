@@ -339,7 +339,7 @@ mount | grep home </p>
 <p>ssh mic7
 mount | grep home </p>
 
-<h1>Install ICC17 </h1>
+<h1>Intel C++ Compiler 17 </h1>
 
 <p>cp
 /mnt/nfs/System/parallel_studio_xe_2017_update1.tgz /home/</p>
@@ -359,7 +359,7 @@ mount | grep home </p>
 /etc/profile.d/intelComp.sh &lt;&lt;EOF</p>
 
 <p>source
-/opt/intel/parallel_studio_xe_2016.3.067/psxevars.sh</p>
+/opt/intel/parallel_studio_xe_2017.1.043/psxevars.sh</p>
 
 <p>EOF</p>
 
@@ -440,9 +440,9 @@ required     pam_env.so readenv=1</p>
 <p>cat &gt; /var/mpss/common/etc/environment
 &lt;&lt;EOF</p>
 
-<p>PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/intel/impi/5.1.3.210/mic/bin</p>
+<p>PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/intel/impi/2017.1.132/mic/bin</p>
 
-<p>LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries/linux/lib/mic:/opt/intel/impi/5.1.3.210/mic/lib:/opt/intel/compilers_and_libraries_2016.3.210/linux/compiler/lib/intel64_lin_mic/</p>
+<p>LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries/linux/lib/mic:/opt/intel/impi/2017.1.132/mic/lib:/opt/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64_lin_mic/</p>
 
 <p>EOF                                                                   </p>
 
