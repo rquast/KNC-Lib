@@ -20,9 +20,6 @@ echo "Incremental Build enabled"
 fi
 mkdir -p $BUILDTREE
 
-SYSROOT=/home/mpss-3.7/k1om
-MPSSDIR=$SYSROOT
-
 # Build k1om #
 cd $BUILDTREE \
 && $SRC/configure CC=icc CXX=icpc \
@@ -30,11 +27,17 @@ CXXFLAGS="-g -O3 -fPIC -mmic" \
 CFLAGS="-g -O3 -fPIC -mmic" \
 LDFLAGS="-mmic" \
 --host=x86_64 \
---prefix $BUILDTREE
+--prefix $SRC/../install-mic/libjpeg
 cd $BUILDTREE && \
 make -j12
 
-#TODO install-mic
+mkdir -p $SRC/../install-mic/libjpeg/lib
+mkdir -p $SRC/../install-mic/libjpeg/bin
+mkdir -p $SRC/../install-mic/libjpeg/include
+mkdir -p $SRC/../install-mic/libjpeg/man/man1
+make install 
+cp -rf $BUILDTREE/libjpeg.a $SRC/../install-mic/libjpeg/lib
+cp -rf $SRC/*.h $SRC/../install-mic/libjpeg/include
 
 exit
 #TODO
