@@ -1,3 +1,7 @@
 [submodule "qt5"]
 	path = qt5
 	url = https://github.com/mancoast/qt5
+[submodule "lzo"]
+	path = lzo
+	url = https://github.com/mancoast/lzo
+
