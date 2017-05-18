@@ -20,7 +20,7 @@ echo "Incremental Build enabled"
 fi
 mkdir -p $BUILDTREE
 
-SYSROOT=/home/mpss-3.7/k1om
+SYSROOT=/home/mpss-3.8.1/k1om
 MPSSDIR=$SYSROOT
 
 # Build k1om #
