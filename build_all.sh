@@ -28,6 +28,8 @@ echo $KNC_LIB
 #sh $KNC_LIB/szip-2.1/build.bot.log.sh
 #cd $KNC_LIB/zlib-1.2.8/ && \
 #sh $KNC_LIB/zlib-1.2.8/build.bot.log.sh
+cd $KNC_LIB/lzo/ && \
+sh $KNC_LIB/lzo/build.bot.log.sh
 cd $KNC_LIB/freetype2/ && \
 sh $KNC_LIB/freetype2/build.bot.log.sh
 cd $KNC_LIB/libpng/ && \

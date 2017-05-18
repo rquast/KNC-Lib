@@ -1,5 +1,6 @@
 # Destination 
 install-mic/
+install-mic*/
 
 # Compiled Object files
 *.slo

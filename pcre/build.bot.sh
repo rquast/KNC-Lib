@@ -17,7 +17,7 @@ if test ${XEONPHIBUILD+defined}; then
 # XEON PHI Build #
 echo "XEON PHI Build"
 BUILDTREE=$SRC/build-mic
-MPSSDIR=/home/mpss-3.7
+MPSSDIR=/home/mpss-3.8.1
 
 # Clean Build Tree #
 if test ${INCREMENTDISABLE+defined}; then
